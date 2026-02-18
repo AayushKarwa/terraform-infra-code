@@ -4,3 +4,4 @@ terra-key
 terra-key.pub
 terraform.tfstate.backup
 terraform.tfstate
+.gitignore
