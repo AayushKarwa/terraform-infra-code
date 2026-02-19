@@ -1,0 +1,8 @@
+[production-servers]
+slave-1 ansible_host=65.2.3.2001 ansible_user=ec2-user
+slave-2 ansible_host=13.201.21.119 ansible_user=admin
+slave-3 ansible_host=13.201.132.86 ansible_user=ubuntu
+
+[production-servers:vars]
+ansible_python_interpreter=/usr/bin/python3
+ansible_ssh_private_key_file=/home/ubuntu/keys/terra-key-ansible

@@ -1,0 +1,20 @@
+-
+  name: Install Nginx
+  hosts: production-servers
+  become: true  # become sudo 
+
+  tasks:
+    - name: Install Nginx
+      package:
+        name: nginx
+        state: latest
+
+    - name: Start Nginx
+      systemd_service:
+        name: nginx
+        state: started
+
+    - name: Enable Nginx
+      systemd_service:
+        name: nginx
+        enabled: true

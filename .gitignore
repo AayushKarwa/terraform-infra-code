@@ -5,3 +5,5 @@ terra-key.pub
 terraform.tfstate.backup
 terraform.tfstate
 .gitignore
+terra-key-ansible
+terra-key-ansible.pub
